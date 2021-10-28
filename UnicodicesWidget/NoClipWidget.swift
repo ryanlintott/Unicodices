@@ -1,6 +1,6 @@
 //
 //  NoClipWidget.swift
-//  Unicodices
+//  UnicodicesWidget
 //
 //  Created by Ryan Lintott on 2021-10-26.
 //

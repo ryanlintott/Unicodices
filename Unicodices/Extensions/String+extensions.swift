@@ -1,6 +1,6 @@
 //
 //  String+extensions.swift
-//  Wordhord
+//  Unicodices
 //
 //  Created by Ryan Lintott on 2020-11-06.
 //

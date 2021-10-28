@@ -1,6 +1,6 @@
 //
 //  NoClipTextDemoView.swift
-//  SwiftUITextDemo
+//  Unicodices
 //
 //  Created by Ryan Lintott on 2020-10-27.
 //

@@ -1,6 +1,6 @@
 //
 //  NoClipTextJunicode.swift
-//  Wordhord
+//  Unicodices
 //
 //  Created by Ryan Lintott on 2021-04-26.
 //

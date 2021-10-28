@@ -1,8 +1,8 @@
 //
 //  NoClipTextSingleLine.swift
-//  FontTester
+//  Unicodices
 //
-//  Created by Ryan Lintott on 2020-11-06.
+//  Created by Ryan Lintott on 2021-10-26.
 //
 
 import SwiftUI

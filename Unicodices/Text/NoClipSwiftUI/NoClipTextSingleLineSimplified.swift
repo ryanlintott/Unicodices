@@ -2,7 +2,7 @@
 //  NoClipTextSingleLineSimplified.swift
 //  Unicodices
 //
-//  Created by Ryan Lintott on 2021-10-26.
+//  Created by Ryan Lintott on 2021-10-27.
 //
 
 import SwiftUI
