@@ -40,7 +40,7 @@ struct XcodersSpeech: View {
                 }
                 
                 
-                SpeakEasy1(text: "Live tonight at 8:30 PST")
+                SpeakEasy1(text: "Live tonight at 5:30 PDT")
                     .padding()
                     .background(Color.turquoise.cornerRadius(20))
                     .frame(maxWidth: 300)
