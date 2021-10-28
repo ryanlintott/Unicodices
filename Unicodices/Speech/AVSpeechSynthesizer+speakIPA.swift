@@ -16,7 +16,9 @@ extension AVSpeechSynthesizer {
     func speakIPA(_ ipaString: String, voice: AVSpeechSynthesisVoice) {
         let mutableAttributedString = NSMutableAttributedString(string: ipaString)
         
+        /// Define a range that's the length of the ipaString
         let range = NSString(string: ipaString).range(of: ipaString)
+        /// Get the pronunciationKey
         let pronunciationKey = NSAttributedString.Key(rawValue: AVSpeechSynthesisIPANotationAttribute)
         /// Do not confuse with .accessibilitySpeechIPANotation
         

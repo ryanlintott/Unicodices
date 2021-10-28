@@ -34,7 +34,7 @@ struct NoClipTextSingleLineSimplified_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 20) {
             Text(text)
-                .font(.custom(Junius.regular.rawValue, fixedSize: 70))
+                .font(.custom(Junius.regular.rawValue, fixedSize: 80))
                 .border(.pink)
         
             NoClipTextSingleLineSimplified(text: text)

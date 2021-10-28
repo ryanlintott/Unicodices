@@ -19,12 +19,12 @@ struct TextFrameView: View {
 
 struct TextFrameView_Previews: PreviewProvider {
     static var previews: some View {
-        TextFrameView(text: "wrāþ-scræf")
-        
-        VStack(spacing: 10) {
-            TextFrameView(text: "wrāþ-scræf\nwrāþ-scræf")
-            TextFrameView(text: "wrāþ-scræf wrāþ-scræf")
-            TextFrameView(text: "wrāþ-scræf\nwrāþ-scræf ")
+        VStack(spacing: 20) {
+//            TextFrameView(text: "Ēalā, Woruld!")
+            TextFrameView(text: "wrāþ-scræf")
+//            TextFrameView(text: "wrāþ-scræf\nwrāþ-scræf")
+//            TextFrameView(text: "wrāþ-scræf wrāþ-scræf")
+//            TextFrameView(text: "wrāþ-scræf\nwrāþ-scræf ")
         }
     }
 }

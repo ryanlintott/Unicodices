@@ -25,6 +25,7 @@ struct NoClipTextMultiLine: View {
         self.fontName = fontName
         self.relativeTo = relativeTo
         self.maxWidth = maxWidth
+        /// Generate scaled font size
         self._fontSize = ScaledMetric(wrappedValue: fontSize, relativeTo: relativeTo)
     }
     
@@ -36,6 +37,7 @@ struct NoClipTextMultiLine: View {
         MultiLineTextView(multiLineText, font: font, maxWidth: maxWidth) { index, text in
             text
                 .noClipSingleLine(clipExtension: .all(20))
+                .minimumScaleFactor(1)
         }
     }
 }
@@ -44,8 +46,9 @@ struct NoClipTextMultiLine_Previews: PreviewProvider {
     static let text = "Ēalā, Woruld! wrāþ-scræf fēðe-mund þurh-lāð"
     
     static var previews: some View {
-        WidthReader { width in
+        WidthReader(alignment: .center) { width in
             NoClipTextMultiLine(text, fontName: Junius.regular.rawValue, fontSize: 80, maxWidth: width)
+                .border(.pink)
         }
 //        .environment(\.sizeCategory, .extraExtraExtraLarge)
     }

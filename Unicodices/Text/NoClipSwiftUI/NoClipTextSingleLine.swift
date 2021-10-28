@@ -9,7 +9,6 @@ import SwiftUI
 
 struct NoClipTextSingleLine: View {
     static let horizontalTextCount = 20
-    static let widthRatio = CGFloat(horizontalTextCount)
     static let horizontalText = Text(Array<String>(repeating: SpecialCharacter.emSpace, count: horizontalTextCount).joined())
 
     let text: Text
@@ -17,6 +16,16 @@ struct NoClipTextSingleLine: View {
     
     var verticalExtension: CGFloat {
         clipExtension.top + clipExtension.bottom
+    }
+    
+    var leadingPaddingText: Text {
+        Self.horizontalText
+            .font(.system(size: clipExtension.leading / CGFloat(Self.horizontalTextCount)))
+    }
+    
+    var trailingPaddingText: Text {
+        Self.horizontalText
+            .font(.system(size: clipExtension.trailing / CGFloat(Self.horizontalTextCount)))
     }
     
     var body: some View {
@@ -30,27 +39,21 @@ struct NoClipTextSingleLine: View {
             .padding(.leading, -clipExtension.leading)
             .padding(.trailing, -clipExtension.trailing)
     }
-
-    var leadingPaddingText: Text {
-        Self.horizontalText
-            .font(.system(size: clipExtension.leading / Self.widthRatio))
-    }
-    
-    var trailingPaddingText: Text {
-        Self.horizontalText
-            .font(.system(size: clipExtension.trailing / Self.widthRatio))
-    }
 }
 
 extension Text {
     func noClipSingleLine(clipExtension: EdgeInsets) -> some View {
         NoClipTextSingleLine(text: self, clipExtension: clipExtension)
     }
+    
+    func noClipSingleLine(clipExtension: CGFloat) -> some View {
+        NoClipTextSingleLine(text: self, clipExtension: .all(clipExtension))
+    }
 }
 
 struct NoClipTextSwiftUI_Previews: PreviewProvider {
     static let text = "wrāþ-scræf"
-    static let font = Font.custom(Junius.regular.rawValue, size: 80)
+    static let font = Font.custom(Junius.regular.rawValue, size: 70)
     
     static var previews: some View {
         Text(text)

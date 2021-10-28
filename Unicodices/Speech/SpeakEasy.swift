@@ -12,7 +12,9 @@ struct SpeakEasy: View {
     
     var body: some View {
         Button(text) {
+            
             /// Speak
+            
         }
     }
 }

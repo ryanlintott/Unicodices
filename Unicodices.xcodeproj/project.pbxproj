@@ -296,8 +296,8 @@
 			children = (
 				CFD7E501272A3F25001A8A9A /* SpeakEasy.swift */,
 				CF1D7490271A2A4B000CA279 /* SpeakEasy1.swift */,
-				CF019A6F271A0E8A00F13D9B /* AVSpeechSynthesizer+speak.swift */,
 				CF1D7492271A31AE000CA279 /* SpeakEasy2.swift */,
+				CF019A6F271A0E8A00F13D9B /* AVSpeechSynthesizer+speak.swift */,
 				CFD7E507272A4B76001A8A9A /* SpeakEasyIPA.swift */,
 				CF1D7496271B65E3000CA279 /* IHearVoices.swift */,
 				CFD7E505272A457F001A8A9A /* EalaWoruldSpeech.swift */,
