@@ -34,38 +34,38 @@ struct ContentView: View {
                 link(
                     XcodersSpeech(),
                     title: "Xcoders",
-                    systemImage: "textformat.abc"
+                    systemImage: "x.circle"
                 )
                 
                 Section("Text") {
                     link(
                         EalaWoruldText(),
                         title: "Hello World",
-                        systemImage: "textformat.abc"
+                        systemImage: "hand.wave"
                     )
                     
                     link(
                         CustomFontView(),
                         title: "Custom Font",
-                        systemImage: "textformat.abc"
+                        systemImage: "f.cursive"
                     )
                     
                     link(
                         TextFrameView(text: sample),
                         title: "Text Frame",
-                        systemImage: "textformat.abc"
+                        systemImage: "character.textbox"
                     )
                     
                     link(
                         NoClipTextVerticalSimplified(text: sample),
                         title: "NoClipVSimple",
-                        systemImage: "textformat.abc"
+                        systemImage: "arrow.up.arrow.down.square"
                     )
                     
                     link(
                         NoClipTextHorizontalSimplified(text: sample),
                         title: "NoClipHSimple",
-                        systemImage: "textformat.abc"
+                        systemImage: "arrow.left.arrow.right.square"
                     )
                     
                     link(
@@ -74,7 +74,7 @@ struct ContentView: View {
                             .noClipSingleLine(clipExtension: .all(20))
                             .border(.pink),
                         title: "NoClipTextSingleLine",
-                        systemImage: "textformat.abc"
+                        systemImage: "rectangle.and.arrow.up.right.and.arrow.down.left"
                     )
                     
                     link(
@@ -87,13 +87,13 @@ struct ContentView: View {
                             )
                         },
                         title: "NoClipTextMultiLine",
-                        systemImage: "textformat.abc"
+                        systemImage: "text.justifyleft"
                     )
                     
                     link(
                         EdgeCaseTester(text: "jjff"),
                         title: "EdgeCaseTester",
-                        systemImage: "textformat.abc"
+                        systemImage: "a.magnify"
                     )
                 }
                 
@@ -119,13 +119,13 @@ struct ContentView: View {
                     link(
                         EalaWoruldSpeech(),
                         title: "Hello World Speech",
-                        systemImage: "bubble.left.and.bubble.right"
+                        systemImage: "quote.bubble"
                     )
                     
                     link(
                         OldEnglishIPASpeech(),
                         title: "Old English IPA Speech",
-                        systemImage: "bubble.left.and.bubble.right"
+                        systemImage: "scroll"
                     )
                     
                     link(
