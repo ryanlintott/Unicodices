@@ -46,7 +46,7 @@ extension TongueTwisterType {
             ]
         case .name:
             return [
-                "iPhone",
+                "iPhone XS",
                 "M1 Processor",
                 "AVSpeechSynthesis",
                 "Xcoders"
@@ -59,18 +59,15 @@ extension TongueTwisterType {
                 "05-11-1955",
                 "555-123-4567",
                 "1/2",
-                "$3.50",
-                "£10.50",
                 "802.11b"
             ]
         case .symbolic:
             return [
                 "1 + 2",
                 "Fish + chips",
-                "@ryanlintott",
                 ":) ;) :P",
                 "#SwiftUI",
-                "$500"
+                "@ryanlintott"
             ]
         }
     }
