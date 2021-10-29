@@ -3,4 +3,4 @@
 
 If you want to present unsupported languages in iOS you will likely find the edges of Apple’s frameworks. SwiftUI and AVFoundation were not designed with Old English in mind so when the medieval world meets the modern, you have to get creative. This talk is about working around these edge cases and understanding more about SwiftUI Text and AVSpeechSynthesis in the process.
 
-Included in this project are a variety of demos used in the talk.
+Included in this project are a variety of demos used in the talk and the [slides](Unicodices%20-%202021-10-28%20-%20Xcoders.pdf)
