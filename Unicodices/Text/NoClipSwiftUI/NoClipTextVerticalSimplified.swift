@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct NoClipTextVerticalSimplified: View {
-    let text: String
+    let string: String
     let fontSize: CGFloat = 70
     var bottomExtension: CGFloat {
         fontSize * 0.15
     }
     
     var body: some View {
-        Text(text)
+        Text(string)
             .font(.custom(Junius.regular.rawValue, fixedSize: fontSize))
             .baselineOffset(bottomExtension)
             .padding(.bottom, -bottomExtension)
@@ -32,7 +32,7 @@ struct NoClipTextVerticalSimplified_Previews: PreviewProvider {
         HStack(alignment: .lastTextBaseline) {
             Text("a")
                 .font(.system(size: 60))
-            NoClipTextVerticalSimplified(text: "wrāþ-scræf")
+            NoClipTextVerticalSimplified(string: "wrāþ-scræf")
         }
            
         
@@ -41,7 +41,7 @@ struct NoClipTextVerticalSimplified_Previews: PreviewProvider {
                 .font(.custom(Junius.regular.rawValue, fixedSize: 70))
                 .border(.pink)
 
-            NoClipTextVerticalSimplified(text: "wrāþ-scræf\nwrāþ-scræf")
+            NoClipTextVerticalSimplified(string: "wrāþ-scræf\nwrāþ-scræf")
         }
         
     }

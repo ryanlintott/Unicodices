@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct TextFrameView: View {
-    let text: String
+    let string: String
     
     var body: some View {
-        Text(text)
+        Text(string)
             .font(.custom("JuniusVF", size: 70))
             .border(.pink)
     }
@@ -21,7 +21,7 @@ struct TextFrameView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 20) {
 //            TextFrameView(text: "Ēalā, Woruld!")
-            TextFrameView(text: "wrāþ-scræf")
+            TextFrameView(string: "wrāþ-scræf")
 //            TextFrameView(text: "wrāþ-scræf\nwrāþ-scræf")
 //            TextFrameView(text: "wrāþ-scræf wrāþ-scræf")
 //            TextFrameView(text: "wrāþ-scræf\nwrāþ-scræf ")

@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct NoClipTextMultiLine: View {
-    let multiLineText: String
+    let multiLineString: String
     let fontName: String
     let relativeTo: Font.TextStyle
     let maxWidth: CGFloat
     @ScaledMetric var fontSize: CGFloat
 
     init(
-        _ text: String,
+        _ string: String,
         fontName: String,
         fontSize: CGFloat,
         relativeTo: Font.TextStyle = .body,
         maxWidth: CGFloat
     ) {
-        self.multiLineText = text
+        self.multiLineString = string
         self.fontName = fontName
         self.relativeTo = relativeTo
         self.maxWidth = maxWidth
@@ -34,7 +34,7 @@ struct NoClipTextMultiLine: View {
     }
     
     var body: some View {
-        MultiLineTextView(multiLineText, font: font, maxWidth: maxWidth) { index, text in
+        MultiLineTextView(multiLineString, font: font, maxWidth: maxWidth) { index, text in
             text
                 .noClipSingleLine(clipExtension: .all(20))
                 .minimumScaleFactor(1)
@@ -43,11 +43,11 @@ struct NoClipTextMultiLine: View {
 }
 
 struct NoClipTextMultiLine_Previews: PreviewProvider {
-    static let text = "Ēalā, Woruld! wrāþ-scræf fēðe-mund þurh-lāð"
+    static let string = "Ēalā, Woruld! wrāþ-scræf fēðe-mund þurh-lāð"
     
     static var previews: some View {
         WidthReader(alignment: .center) { width in
-            NoClipTextMultiLine(text, fontName: Junius.regular.rawValue, fontSize: 80, maxWidth: width)
+            NoClipTextMultiLine(string, fontName: Junius.regular.rawValue, fontSize: 80, maxWidth: width)
                 .border(.pink)
         }
 //        .environment(\.sizeCategory, .extraExtraExtraLarge)

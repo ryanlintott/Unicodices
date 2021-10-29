@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct NoClipTextHorizontalSimplified: View {
-    let text: String
+    let string: String
     let fontName: String = Junius.regular.rawValue
-    let fontSize: CGFloat = 80
+    let fontSize: CGFloat = 70
     
     // Character width equals fontSize
     let emSpace = "\u{2003}"
     
     var body: some View {
-        Text(emSpace + text + emSpace)
+        Text(emSpace + string + emSpace)
             .font(.custom(fontName, fixedSize: fontSize))
             .padding(.horizontal, -fontSize)
             .border(.pink)
@@ -25,10 +25,10 @@ struct NoClipTextHorizontalSimplified: View {
 
 struct NoClipTextHorizontalSimplified_Previews: PreviewProvider {
     static var previews: some View {
-        NoClipTextHorizontalSimplified(text: "wrāþ-scræf")
+        NoClipTextHorizontalSimplified(string: "wrāþ-scræf")
             
 
         // Multiline text doesn't work
-        NoClipTextHorizontalSimplified(text: "wrāþ-scræf\nwrāþ-scræf")
+        NoClipTextHorizontalSimplified(string: "wrāþ\nscræf")
     }
 }

@@ -45,10 +45,6 @@ extension Text {
     func noClipSingleLine(clipExtension: EdgeInsets) -> some View {
         NoClipTextSingleLine(text: self, clipExtension: clipExtension)
     }
-    
-    func noClipSingleLine(clipExtension: CGFloat) -> some View {
-        NoClipTextSingleLine(text: self, clipExtension: .all(clipExtension))
-    }
 }
 
 struct NoClipTextSwiftUI_Previews: PreviewProvider {

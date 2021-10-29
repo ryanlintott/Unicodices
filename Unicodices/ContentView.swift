@@ -51,19 +51,19 @@ struct ContentView: View {
                     )
                     
                     link(
-                        TextFrameView(text: sample),
+                        TextFrameView(string: sample),
                         title: "Text Frame",
                         systemImage: "character.textbox"
                     )
                     
                     link(
-                        NoClipTextVerticalSimplified(text: sample),
+                        NoClipTextVerticalSimplified(string: sample),
                         title: "NoClipVSimple",
                         systemImage: "arrow.up.arrow.down.square"
                     )
                     
                     link(
-                        NoClipTextHorizontalSimplified(text: sample),
+                        NoClipTextHorizontalSimplified(string: sample),
                         title: "NoClipHSimple",
                         systemImage: "arrow.left.arrow.right.square"
                     )
@@ -137,6 +137,8 @@ struct ContentView: View {
             }
             .navigationTitle("Unicodices")
         }
+        .colorScheme(.dark)
+        .accentColor(.hotPink)
     }
 }
 

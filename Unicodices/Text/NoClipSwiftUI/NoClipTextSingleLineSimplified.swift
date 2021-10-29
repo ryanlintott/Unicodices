@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NoClipTextSingleLineSimplified: View {
-    let text: String
+    let string: String
     let fontName: String = Junius.regular.rawValue
     let fontSize: CGFloat = 80
     
@@ -16,7 +16,7 @@ struct NoClipTextSingleLineSimplified: View {
     let emSpace = "\u{2003}"
     
     var body: some View {
-        Text(emSpace + text + emSpace)
+        Text(emSpace + string + emSpace)
             .font(.custom(fontName, fixedSize: fontSize))
             .baselineOffset(fontSize)
             .alignmentGuide(.lastTextBaseline) { d in
@@ -29,15 +29,15 @@ struct NoClipTextSingleLineSimplified: View {
 }
 
 struct NoClipTextSingleLineSimplified_Previews: PreviewProvider {
-    static let text = "wrāþ-scræf"
+    static let string = "wrāþ-scræf"
     
     static var previews: some View {
         VStack(spacing: 20) {
-            Text(text)
+            Text(string)
                 .font(.custom(Junius.regular.rawValue, fixedSize: 80))
                 .border(.pink)
         
-            NoClipTextSingleLineSimplified(text: text)
+            NoClipTextSingleLineSimplified(string: string)
                 .border(.pink)
         }
     }

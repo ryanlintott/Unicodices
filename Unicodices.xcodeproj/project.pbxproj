@@ -23,6 +23,7 @@
 		CF469F4C27188AE80097997C /* Font-JuniusVF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF469F4B27188AE80097997C /* Font-JuniusVF.swift */; };
 		CF469F4E27188B140097997C /* NoClipTextJunicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF469F4D27188B140097997C /* NoClipTextJunicode.swift */; };
 		CF469F5027188B1C0097997C /* JuniusVF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF469F4F27188B1C0097997C /* JuniusVF.ttf */; };
+		CFB6ECB9272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6ECB8272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift */; };
 		CFD7E4A927287349001A8A9A /* NoClipUILabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E4A727287349001A8A9A /* NoClipUILabelView.swift */; };
 		CFD7E4AA27287349001A8A9A /* NoClipUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E4A827287349001A8A9A /* NoClipUILabel.swift */; };
 		CFD7E4AC27287362001A8A9A /* NoClipLabelDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E4AB27287362001A8A9A /* NoClipLabelDemoView.swift */; };
@@ -103,6 +104,7 @@
 		CF469F4B27188AE80097997C /* Font-JuniusVF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font-JuniusVF.swift"; sourceTree = "<group>"; };
 		CF469F4D27188B140097997C /* NoClipTextJunicode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoClipTextJunicode.swift; sourceTree = "<group>"; };
 		CF469F4F27188B1C0097997C /* JuniusVF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JuniusVF.ttf; sourceTree = "<group>"; };
+		CFB6ECB8272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClipTextSingleLineSimplified2.swift; sourceTree = "<group>"; };
 		CFD7E4A527286E72001A8A9A /* EdgeCaseTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeCaseTester.swift; sourceTree = "<group>"; };
 		CFD7E4A727287349001A8A9A /* NoClipUILabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoClipUILabelView.swift; sourceTree = "<group>"; };
 		CFD7E4A827287349001A8A9A /* NoClipUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoClipUILabel.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				CFD7E4EE2729E930001A8A9A /* NoClipTextVerticalSimplified.swift */,
 				CFD7E4F22729F2F3001A8A9A /* NoClipTextHorizontalSimplified.swift */,
 				CFD7E4B727289ECD001A8A9A /* NoClipTextSingleLineSimplified.swift */,
+				CFB6ECB8272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift */,
 				CFD7E4BD2728A2E5001A8A9A /* NoClipTextSingleLine.swift */,
 				CFD7E4B92728A263001A8A9A /* MultiLineTextView.swift */,
 				CFD7E4FC272A067F001A8A9A /* NoClipTextMultiLine.swift */,
@@ -298,8 +301,8 @@
 				CF1D7490271A2A4B000CA279 /* SpeakEasy1.swift */,
 				CF1D7492271A31AE000CA279 /* SpeakEasy2.swift */,
 				CF019A6F271A0E8A00F13D9B /* AVSpeechSynthesizer+speak.swift */,
-				CFD7E507272A4B76001A8A9A /* SpeakEasyIPA.swift */,
 				CF1D7496271B65E3000CA279 /* IHearVoices.swift */,
+				CFD7E507272A4B76001A8A9A /* SpeakEasyIPA.swift */,
 				CFD7E505272A457F001A8A9A /* EalaWoruldSpeech.swift */,
 				CFD7E503272A41E0001A8A9A /* AVSpeechSynthesizer+speakIPA.swift */,
 				CF1D749A271B9C62000CA279 /* OldEnglishIPASpeech.swift */,
@@ -430,6 +433,7 @@
 				CFD7E4AE27287371001A8A9A /* UILabelView.swift in Sources */,
 				CFD7E4AA27287349001A8A9A /* NoClipUILabel.swift in Sources */,
 				CF469F4C27188AE80097997C /* Font-JuniusVF.swift in Sources */,
+				CFB6ECB9272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift in Sources */,
 				CFD7E4C22728AFB3001A8A9A /* DynamicUIFont.swift in Sources */,
 				CF019A72271A0F6A00F13D9B /* TongueTwisterView.swift in Sources */,
 				CFD7E4F9272A0016001A8A9A /* WidthReader.swift in Sources */,
