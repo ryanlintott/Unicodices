@@ -38,7 +38,10 @@ struct EdgeCaseTester: View {
                     Text(text)
                         .font(.system(size: size))
                 }
-                .border(.pink)
+                .background(
+                    Color.clear
+                        .border(.pink)
+                )
             }
         }
     }

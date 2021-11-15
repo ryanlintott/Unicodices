@@ -23,6 +23,9 @@
 		CF469F4C27188AE80097997C /* Font-JuniusVF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF469F4B27188AE80097997C /* Font-JuniusVF.swift */; };
 		CF469F4E27188B140097997C /* NoClipTextJunicode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF469F4D27188B140097997C /* NoClipTextJunicode.swift */; };
 		CF469F5027188B1C0097997C /* JuniusVF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF469F4F27188B1C0097997C /* JuniusVF.ttf */; };
+		CF5976992742BF8400119099 /* CoreTextLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5976982742BF8400119099 /* CoreTextLineView.swift */; };
+		CF59769B2742BFA500119099 /* CoreTextRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59769A2742BFA500119099 /* CoreTextRepresentableView.swift */; };
+		CF59769D2742BFE400119099 /* CoreTextLineUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59769C2742BFE400119099 /* CoreTextLineUIView.swift */; };
 		CFB6ECB9272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6ECB8272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift */; };
 		CFD7E4A927287349001A8A9A /* NoClipUILabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E4A727287349001A8A9A /* NoClipUILabelView.swift */; };
 		CFD7E4AA27287349001A8A9A /* NoClipUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7E4A827287349001A8A9A /* NoClipUILabel.swift */; };
@@ -104,6 +107,9 @@
 		CF469F4B27188AE80097997C /* Font-JuniusVF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font-JuniusVF.swift"; sourceTree = "<group>"; };
 		CF469F4D27188B140097997C /* NoClipTextJunicode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoClipTextJunicode.swift; sourceTree = "<group>"; };
 		CF469F4F27188B1C0097997C /* JuniusVF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JuniusVF.ttf; sourceTree = "<group>"; };
+		CF5976982742BF8400119099 /* CoreTextLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextLineView.swift; sourceTree = "<group>"; };
+		CF59769A2742BFA500119099 /* CoreTextRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextRepresentableView.swift; sourceTree = "<group>"; };
+		CF59769C2742BFE400119099 /* CoreTextLineUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTextLineUIView.swift; sourceTree = "<group>"; };
 		CFB6ECB8272B6B75004E1FD5 /* NoClipTextSingleLineSimplified2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoClipTextSingleLineSimplified2.swift; sourceTree = "<group>"; };
 		CFD7E4A527286E72001A8A9A /* EdgeCaseTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeCaseTester.swift; sourceTree = "<group>"; };
 		CFD7E4A727287349001A8A9A /* NoClipUILabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoClipUILabelView.swift; sourceTree = "<group>"; };
@@ -213,9 +219,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CF5976972742BF6D00119099 /* NoClipCoreText */ = {
+			isa = PBXGroup;
+			children = (
+				CF5976982742BF8400119099 /* CoreTextLineView.swift */,
+				CF59769A2742BFA500119099 /* CoreTextRepresentableView.swift */,
+				CF59769C2742BFE400119099 /* CoreTextLineUIView.swift */,
+			);
+			path = NoClipCoreText;
+			sourceTree = "<group>";
+		};
 		CFD7E4AF272873A5001A8A9A /* NoClipTextAlternatives */ = {
 			isa = PBXGroup;
 			children = (
+				CF5976972742BF6D00119099 /* NoClipCoreText */,
 				CFD7E4EA2729E381001A8A9A /* NoClipUIKit */,
 				CFD7E4FA272A00FB001A8A9A /* TextLines.swift */,
 				CFD7E4C32728AFEB001A8A9A /* DynamicFont.swift */,
@@ -422,6 +439,7 @@
 				CFD7E50A272AE49D001A8A9A /* XcodersSpeech.swift in Sources */,
 				CF1D7495271B3C5B000CA279 /* TongueTwisterType.swift in Sources */,
 				CFD7E4E227298740001A8A9A /* VoicePicker.swift in Sources */,
+				CF59769D2742BFE400119099 /* CoreTextLineUIView.swift in Sources */,
 				CFD7E4F32729F2F3001A8A9A /* NoClipTextHorizontalSimplified.swift in Sources */,
 				CFD7E508272A4B76001A8A9A /* SpeakEasyIPA.swift in Sources */,
 				CF1D7493271A31AE000CA279 /* SpeakEasy2.swift in Sources */,
@@ -456,11 +474,13 @@
 				CFD7E4E52729DD0A001A8A9A /* EalaWoruldText.swift in Sources */,
 				CFD7E4FD272A067F001A8A9A /* NoClipTextMultiLine.swift in Sources */,
 				CFD7E4C02728A4F7001A8A9A /* EdgeInsets+extension.swift in Sources */,
+				CF59769B2742BFA500119099 /* CoreTextRepresentableView.swift in Sources */,
 				CF469F4E27188B140097997C /* NoClipTextJunicode.swift in Sources */,
 				CF469F3B27188A100097997C /* UnicodicesApp.swift in Sources */,
 				CFD7E4E72729DF88001A8A9A /* CustomFontView.swift in Sources */,
 				CFD7E4E92729DFC7001A8A9A /* TextFrameView.swift in Sources */,
 				CFD7E502272A3F25001A8A9A /* SpeakEasy.swift in Sources */,
+				CF5976992742BF8400119099 /* CoreTextLineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
